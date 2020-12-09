@@ -1,0 +1,1734 @@
+
+--- Job Optimization_Model.gms Start 12/08/20 16:06:06 32.2.0 rc62c018 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\Program Files\32\GAMS\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\Optimization_Model.gms
+    PageWidth 80
+    PageSize 0
+    PageContr 3
+    Action CE
+    ScrDir C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\
+    SysDir "C:\Program Files\32\GAMS\"
+    WorkDir C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\
+    LogOption 3
+    DFormat 0
+    TFormat 0
+    ErrorLog 99
+    IDE 1
+GAMS 32.2.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
+Licensee: Small MUD - 5 User License                     G200622/0001AP-GEN
+          Utah State University, Utah Water Research Laboratory      DC7087
+          C:\Program Files\32\GAMS\gamslice.txt
+--- Starting compilation
+--- Optimization_Model.gms(112) 3 Mb
+--- call gdxxrw.exe I=INPUT.xlsx O=INPUT.gdx par=distance rng=distance!A1:L12 Rdim=1 Cdim=1  par=cost rng=cost!A1:B10 Rdim=1 par=penalty rng=penalty!A1:L12 Rdim=1 Cdim=1 par=A rng=A!A1:M12 Rdim=1 Cdim=1  par=economic_costs rng=economic!A1:N11 Rdim=1 Cdim=
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\INPUT.xlsx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\INPUT.gdx
+Total time = 734 Ms
+--- Optimization_Model.gms(115) 3 Mb
+--- call gdxxrw.exe I=INPUT_PATH_UP.xlsx O=INPUT_PATH_UP.gdx par=path_up rng=Sheet1!A1:M122 Rdim=2 Cdim=1
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\INPUT_PATH_UP.xlsx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\INPUT_PATH_UP.gdx
+Total time = 641 Ms
+--- Optimization_Model.gms(136) 3 Mb
+--- GDXin=C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\INPUT.gdx
+--- Optimization_Model.gms(155) 3 Mb
+--- GDXin=C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\INPUT_PATH_UP.gdx
+--- Optimization_Model.gms(306) 3 Mb
+--- Starting execution: elapsed 0:00:01.617
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S1
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.626
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 1 rows and 1 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.08 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.08 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.00sec (det. 0.08 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.366855    (0 iterations, 0 nodes)
+Final Solve:             4.366855    (0 iterations)
+
+Best possible:           4.366855
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:01.722
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S2
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.726
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 1 rows and 1 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.08 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.08 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.08 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.366855    (0 iterations, 0 nodes)
+Final Solve:             4.366855    (0 iterations)
+
+Best possible:           4.366855
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:01.863
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S3
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.867
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 1 rows and 1 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.08 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.08 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.08 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.366855    (0 iterations, 0 nodes)
+Final Solve:             4.366855    (0 iterations)
+
+Best possible:           4.366855
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.001
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S4
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.005
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 1 rows and 1 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.08 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.08 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.08 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.366855    (0 iterations, 0 nodes)
+Final Solve:             4.366855    (0 iterations)
+
+Best possible:           4.366855
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.135
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S5
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.139
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 1 rows and 1 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.08 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.08 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.08 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.366855    (0 iterations, 0 nodes)
+Final Solve:             4.366855    (0 iterations)
+
+Best possible:           4.366855
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.270
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S6
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.278
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 1 rows and 1 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.08 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.08 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.08 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.366855    (0 iterations, 0 nodes)
+Final Solve:             4.366855    (0 iterations)
+
+Best possible:           4.366855
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.413
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S7
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.416
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 2 rows and 2 columns.
+Aggregator did 2 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.09 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.09 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.09 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.09 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.371935    (0 iterations, 0 nodes)
+Final Solve:             4.371935    (0 iterations)
+
+Best possible:           4.371935
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.547
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S8
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.551
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.02 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 2 rows and 2 columns.
+Aggregator did 2 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.09 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (0.09 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (0.09 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.11sec (det. 0.09 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.371935    (0 iterations, 0 nodes)
+Final Solve:             4.371935    (0 iterations)
+
+Best possible:           4.371935
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.680
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S9
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.684
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 125 rows and 24 columns.
+MIP Presolve added 2 rows and 2 columns.
+Aggregator did 2 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.11 sec. (0.08 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (0.09 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (0.09 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.11sec (det. 0.09 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.371935    (0 iterations, 0 nodes)
+Final Solve:             4.371935    (0 iterations)
+
+Best possible:           4.371935
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.820
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S10
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.825
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 121 rows and 17 columns.
+MIP Presolve added 1 rows and 1 columns.
+MIP Presolve modified 3 coefficients.
+Aggregator did 5 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.10 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.11 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.11 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.11 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.383399    (0 iterations, 0 nodes)
+Final Solve:             4.383399    (0 iterations)
+
+Best possible:           4.383399
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:02.960
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S11
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:02.963
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 121 rows and 17 columns.
+MIP Presolve added 1 rows and 1 columns.
+MIP Presolve modified 7 coefficients.
+Aggregator did 5 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.10 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.10 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.10 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.10 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.388479    (0 iterations, 0 nodes)
+Final Solve:             4.388479    (0 iterations)
+
+Best possible:           4.388479
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.095
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S12
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.099
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 121 rows and 12 columns.
+MIP Presolve added 6 rows and 1 columns.
+MIP Presolve modified 10 coefficients.
+Aggregator did 10 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.12 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.07 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.392867    (0 iterations, 0 nodes)
+Final Solve:             4.392867    (0 iterations)
+
+Best possible:           4.392867
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.228
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S13
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.232
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 121 rows and 15 columns.
+MIP Presolve added 3 rows and 1 columns.
+MIP Presolve modified 10 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.13 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.13 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.13 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.13 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.540776    (0 iterations, 0 nodes)
+Final Solve:             4.540776    (0 iterations)
+
+Best possible:           4.540776
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.362
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S14
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.366
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.12 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.497
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S15
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.500
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.12 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.631
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S16
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.635
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.12 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.764
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S17
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.767
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.12 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:03.896
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S18
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:03.900
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.11 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:04.031
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S19
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.035
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.11 sec. (0.11 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.11sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:04.165
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S20
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.169
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.11 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.02sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:04.298
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S21
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.302
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.11 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.00sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:04.432
+--- Optimization_Model.gms(248) 4 Mb
+--- Generating MIP model CONNECTIVITY
+--- Optimization_Model.gms(267) 4 Mb
+--- LOOPS mn = 8
+---       w = w6
+---       scenarios = S22
+---       rad_infl = r4
+---   125 rows  27 columns  339 non-zeroes
+---   24 discrete-columns
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:04.436
+
+IBM ILOG CPLEX   32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+--- GAMS/Cplex Link licensed for continuous and discrete problems.
+Cplex 12.10.0.0
+
+Reading data...
+Starting Cplex...
+Space for names approximately 0.00 Mb
+Use option 'names no' to turn use of names off
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Found incumbent of value 4.142800 after 0.00 sec. (0.01 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 125 rows and 19 columns.
+MIP Presolve added 7 rows and 5 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.09 sec. (0.11 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (0.12 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (0.12 ticks)
+MIP status(101): integer optimal solution
+Cplex Time: 0.09sec (det. 0.12 ticks)
+Fixing integer variables, and solving final LP...
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 2
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_TimeLimit                               9999999
+CPXPARAM_Tune_TimeLimit                          1999999.8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+CPXPARAM_MIP_Tolerances_MIPGap                   0
+CPXPARAM_WorkDir                                 "C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\225a\"
+Tried aggregator 1 time.
+LP Presolve eliminated 125 rows and 27 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+Fixed MIP status(1): optimal
+Cplex Time: 0.01sec (det. 0.08 ticks)
+
+Proven optimal solution.
+
+MIP Solution:            4.545164    (0 iterations, 0 nodes)
+Final Solve:             4.545164    (0 iterations)
+
+Best possible:           4.545164
+Absolute gap:            0.000000
+Relative gap:            0.000000
+
+--- Reading solution for model CONNECTIVITY
+--- Executing after solve: elapsed 0:00:04.566
+--- Optimization_Model.gms(288) 4 Mb
+--- GDX File C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\Results.gdx
+--- Optimization_Model.gms(289) 4 Mb
+--- GDX File C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\economicloss.gdx
+--- Optimization_Model.gms(290) 4 Mb
+--- GDX File C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\reaches.gdx
+--- Optimization_Model.gms(291) 4 Mb
+--- GDX File C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\quality_length.gdx
+--- Optimization_Model.gms(292) 4 Mb
+--- GDX File C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\barriers_removed.gdx
+--- Optimization_Model.gms(293) 4 Mb
+--- GDX File C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\spent.gdx
+--- Optimization_Model.gms(296) 4 Mb
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\barriers_removed.gdx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\barriers_removed.xlsx
+Total time = 625 Ms
+--- Optimization_Model.gms(298) 4 Mb
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\Results.gdx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\Results.xlsx
+Total time = 625 Ms
+--- Optimization_Model.gms(300) 4 Mb
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\quality_length.gdx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\quality_length.xlsx
+Total time = 594 Ms
+--- Optimization_Model.gms(302) 4 Mb
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\reaches.gdx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\reaches.xlsx
+Total time = 625 Ms
+--- Optimization_Model.gms(304) 4 Mb
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\economicloss.gdx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\economicloss.xlsx
+Total time = 625 Ms
+--- Optimization_Model.gms(306) 4 Mb
+
+GDXXRW           32.2.0 rc62c018 Released Aug 26, 2020 WEI x86 64bit/MS Window
+Input file : C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\spent.gdx
+Output file: C:\Users\A02290896\Documents\Coursework\CEE_6410_Goodrum\Project\Optimization_Model\BR_Barrier_Removal_working_eqlWgt\spent.xlsx
+Total time = 578 Ms
+*** Status: Normal completion
+--- Job Optimization_Model.gms Stop 12/08/20 16:06:15 elapsed 0:00:08.841
