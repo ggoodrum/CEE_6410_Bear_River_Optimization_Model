@@ -3,8 +3,9 @@
 # Date: 12/8/2020
 
 # Description:
-# This README contains information for how to adapt the Kraft et al. 2019 
-# Optimizing Stream Barrier Removal model for another river basin.
+# This repository contains input data and GAMS code adapted used in adapting 
+# the barrier removal optimization model described in Kraft et al. 2019 to the
+# Bear River watershed.
 
 # Input data:
 # Geospatial: Contacted author, but no clear workflow for how to produce model inputs from geospatial data.
